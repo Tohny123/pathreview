@@ -3,7 +3,7 @@
 **Issue:** rompt injection defense doesn't sanitize newline characters in user-supplied resume text https://github.com/ascherj/pathreview/issues/64 
 
 ### Understand
-This behavior arises as a result of a failure to extract forbidden characters in a string. In `safety/prompt_defense.py` there is a function called "sanitize" which takes in a string and returns the sanitized text, this function fails to strip escape sequences, such as '\n'
+This behavior arises as a result of a failure to extract forbidden characters in a string. In `safety/prompt_defense.py` there is a function called "sanitize" which takes in a string and returns the sanitized text, this function fails to strip escape sequences, such as `\n---\n` and `\nSystem:`
 
 ### Map
 I expect it to touch the `safety/prompt_defense.py` file, as well as all of the tests that connect to this file

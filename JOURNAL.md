@@ -17,12 +17,12 @@ In `safety/prompt_defense.py`, the input sanitizer doesn't properly sanitize awa
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [link to commit documenting the reproduced issue]
+**Reproduction commit link:** https://github.com/Tohny123/pathreview/commit/8ea9eaf1fed2c2c667a03889f1599a6e9cc952ca
 
 **Reproduction summary:**
-[1–2 sentences: How did you reproduce the issue? What did you observe?]
+First, I looked at where the "sanitize" function was implemented, but there were no implementations running in the flask API, so I decided to run the function directly via a new file called `reproduction.py`. When I ran this file, I noticed that the file did sanitize "<" and ">" chars
 
-**PLAN.md link:** [link to PLAN.md in your fork]
+**PLAN.md link:** https://github.com/Tohny123/pathreview/blob/fix/64-newline-sanitization-in-user-supplied-text/PLAN.md
 
 **Walkthrough video (recommended):** 
 
