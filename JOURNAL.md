@@ -46,9 +46,9 @@ I came across CI issues regarding the unit tests, the Linter is being too strict
 
 ### Check-in 2 (end of week)
 
-**PR link:** [link to your submitted pull request]
+**PR link:** https://github.com/ascherj/pathreview/pull/857 
 
-**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+**Branch:** fix/64-newline-sanitization-in-user-supplied-text
 
 **What you built:**
 I have updated the sanitizer function in safety/prompt_defense.py to properly sanitize away newline characters. I have also added unit tests to test the new functionality of the sanitizer function
