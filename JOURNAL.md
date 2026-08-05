@@ -27,3 +27,36 @@ First, I looked at where the "sanitize" function was implemented, but there were
 **Walkthrough video (recommended):** 
 
 **Blockers or open questions:**
+
+
+## Week 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+I have sucessfully run the project and identified the problem area
+
+**Next steps:**
+I want to work on the tests and make sure that my project is ready for my PR
+
+**Blockers:**
+I came across CI issues regarding the unit tests, the Linter is being too strict for these tests and forcing all test functions to have a return value, for now I am following the linter
+
+---
+
+### Check-in 2 (end of week)
+
+**PR link:** [link to your submitted pull request]
+
+**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+
+**What you built:**
+I have updated the sanitizer function in safety/prompt_defense.py to properly sanitize away newline characters. I have also added unit tests to test the new functionality of the sanitizer function
+
+**Tests added or updated:**
+I added new tests that cover all of the injection patters covered in the initial Issue,  such as `\n---\n` and `\nSystem:`
+
+
+**Self-review confirmation:** [X] make check passes  [X] make test-unit passes
+
+**Draft PR feedback received from:** "none"
